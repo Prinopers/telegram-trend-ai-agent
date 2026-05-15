@@ -1,12 +1,5 @@
+from src.trend_scanner import scan_trends
+
 print("Telegram Trend AI Agent Started")
 
-platforms = [
-    "YouTube",
-    "Reddit",
-    "TikTok",
-    "X",
-    "Instagram"
-]
-
-for platform in platforms:
-    print(f"Scanning trends from {platform}...")
+scan_trends()
