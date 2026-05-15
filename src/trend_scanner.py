@@ -1,3 +1,5 @@
+from src.telegram_sender import send_message
+
 platforms = [
     "YouTube",
     "Reddit",
@@ -8,7 +10,10 @@ platforms = [
 
 def scan_trends():
     for platform in platforms:
-        print(f"Scanning trends from {platform}...")
+        message = f"Scanning trends from {platform}..."
+        
+        print(message)
+        send_message(message)
 
 if __name__ == "__main__":
     scan_trends()
